@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+    
+{% block head %}Add Blog{% endblock %}
+
+{% block body %}
+    <form action="/submit_blog" method="POST">
+        <input type="text" name="blog_title" placeholder="Blog Title">
+        <br>
+        <textarea name="blog_body" id="" cols="30" rows="10" placeholder="Blog Body">
+
+        </textarea>
+        <br>
+        <input type="submit">
+    </form>
+{% endblock %}

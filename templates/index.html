@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head %}Index{% endblock %}
+
+{% block body %}
+    <h1>Hello, {{ name }}!</h1>
+    {% set location = "Miami" %}
+    <h2>Location: {{location}}</h2>
+
+    {% if online %}
+        <h4>Online!</h4>
+    {% else %}
+        <h4>Not online :(</h4>
+    {% endif %}
+{% endblock %}

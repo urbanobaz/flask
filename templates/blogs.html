@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+    
+{% block head %}Blog{% endblock %}
+
+{% block body %}
+    <h1>All Blogs</h1>
+    <hr>
+
+    {% for id in blogs %}
+        {% set blog = blogs[id] %}
+        <a href="/blog/{{id}}">{{blog.title}}</a>
+        <h6>{{blog.body}}</h6>
+        <hr>
+    {% endfor %}
+{% endblock %}
